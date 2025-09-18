@@ -103,7 +103,7 @@ const LandingPage = () => {
         hashtags={getContent('footer_hashtags', '#SambalMaknyuuus #PedasBikinKetagihan #SambalEnak')}
         copyright={getContent('footer_copyright', '© 2024 Sambal Maknyuuus. All rights reserved.')}
       />
-      <ChatWidget webhookUrl="YOUR_PRODUCTION_WEBHOOK_URL" />
+      <ChatWidget webhookUrl="https://meilanysr.app.n8n.cloud/webhook/6756835b-e5f7-4d03-a524-dcf605ebed66/chat" />
     </div>
   );
 };
