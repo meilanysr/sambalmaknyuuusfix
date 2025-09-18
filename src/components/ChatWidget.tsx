@@ -15,7 +15,7 @@ const ChatWidget = ({ webhookUrl }: ChatWidgetProps) => {
     });
 
     return () => {
-      chat.destroy();
+      chat.remove(); // Corrected from chat.destroy() to chat.remove()
     };
   }, [webhookUrl]);
 
