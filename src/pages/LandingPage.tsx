@@ -9,6 +9,7 @@ import Cta from "@/components/sambal/Cta";
 import Footer from "@/components/sambal/Footer";
 import MapLocation from "@/components/sambal/MapLocation";
 import Stats from "@/components/sambal/Stats";
+import ChatWidget from "@/components/ChatWidget"; // Import the new ChatWidget
 import { supabase } from "@/integrations/supabase/client";
 import { showError } from "@/utils/toast";
 
@@ -102,6 +103,7 @@ const LandingPage = () => {
         hashtags={getContent('footer_hashtags', '#SambalMaknyuuus #PedasBikinKetagihan #SambalEnak')}
         copyright={getContent('footer_copyright', '© 2024 Sambal Maknyuuus. All rights reserved.')}
       />
+      <ChatWidget webhookUrl="YOUR_PRODUCTION_WEBHOOK_URL" />
     </div>
   );
 };
